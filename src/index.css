@@ -1,0 +1,54 @@
+:root {
+  --pp-azul: #2a6a8e;
+  --pp-azul-oscuro: #1f4e79;
+  --bs-body-font-family: 'Overpass', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --bs-body-bg: #f5f7fa;
+  --bs-body-color: #212b36;
+  --bs-light-rgb: 245, 247, 250;
+}
+
+body { margin: 0; }
+
+#root { min-height: 100svh; display: flex; flex-direction: column; }
+
+.pp-nav { background: var(--pp-azul-oscuro); }
+.pp-nav .navbar-brand { display: inline-flex; align-items: center; font-weight: 700; }
+.pp-nav .form-control { background: #fff; border-color: transparent; }
+.pp-nav .btn-outline-danger,
+.pp-nav .btn-outline-success {
+  --bs-btn-color: #fff; --bs-btn-border-color: rgba(255, 255, 255, 0.7);
+  --bs-btn-hover-color: var(--pp-azul-oscuro); --bs-btn-hover-bg: #fff; --bs-btn-hover-border-color: #fff;
+  --bs-btn-active-color: var(--pp-azul-oscuro); --bs-btn-active-bg: #fff; --bs-btn-active-border-color: #fff;
+}
+.pp-logo { height: 2.2rem; width: auto; margin-right: 0.6rem; }
+
+.pp-footer { background: var(--pp-azul-oscuro); color: rgba(255, 255, 255, 0.85); }
+.pp-footer h2 { color: #fff; }
+.pp-footer a { color: #cfe6f5; }
+.pp-footer .text-muted { color: rgba(255, 255, 255, 0.65) !important; }
+
+.pp-hero { background: var(--pp-azul); color: #fff; padding: 2.5rem 0; }
+.pp-hero p { max-width: 44rem; }
+.pp-hero p.opacity-75 { opacity: 1 !important; }
+
+.card { border: 1px solid #e3e8ee; border-radius: 0.75rem; }
+.card.border-0 { border: 1px solid #e3e8ee !important; }
+.shadow-sm { box-shadow: none !important; }
+.pp-stat { color: var(--pp-azul); }
+
+.btn { font-weight: 600; border-radius: 0.5rem; }
+.btn-primary {
+  --bs-btn-bg: var(--pp-azul); --bs-btn-border-color: var(--pp-azul);
+  --bs-btn-hover-bg: var(--pp-azul-oscuro); --bs-btn-hover-border-color: var(--pp-azul-oscuro);
+  --bs-btn-active-bg: var(--pp-azul-oscuro); --bs-btn-active-border-color: var(--pp-azul-oscuro);
+  --bs-btn-focus-shadow-rgb: 42, 106, 142;
+}
+.form-control:focus, .form-select:focus {
+  border-color: var(--pp-azul); box-shadow: 0 0 0 0.2rem rgba(42, 106, 142, 0.2);
+}
+
+.pp-login {
+  flex: 1; display: flex; align-items: center;
+  background: var(--pp-azul-oscuro) url('./assets/login.jpg') center top / cover no-repeat;
+}
+.pp-login .container { width: 100%; }
